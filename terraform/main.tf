@@ -17,4 +17,8 @@ terraform {
 provider "azurerm" {
   features {}
 }
+#Get resource group
+data "azurerm_resource_group" "wsdevops" {
+  name = "ws-devops"
+}
 
