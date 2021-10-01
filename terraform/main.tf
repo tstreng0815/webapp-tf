@@ -22,7 +22,7 @@ data "azurerm_resource_group" "wsdevops" {
   name = "ws-devops"
 }
 resource "azurerm_app_service_plan" "sp1" {
-  name                = "<asp47110815"
+  name                = "asp47110815"
   location            = data.azurerm_resource_group.wsdevops.location
   resource_group_name = data.azurerm_resource_group.wsdevops.name
   kind                = "Linux"
